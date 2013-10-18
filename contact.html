@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Cyrus Cylinder-Contact</title>
+<link href="styles.css" rel="stylesheet">
+
+<style type="text/css">
+      
+      #contact-form {
+        width: 320px;
+      }
+    
+      #contact-form label {
+        display: block;
+        margin: 10px 0px;
+      }
+    
+      #contact-form input, #contact-form textarea {
+        padding: 4px;
+      }
+    
+      #contact-form .full-width {
+        width: 100%;
+      }
+    
+      #contact-form textarea {
+        height: 100px;
+      }
+
+      /*error styling*/ 
+      .errors h3, .errors li {
+        color: #FF0000;
+      }
+    
+      .errors li {
+        margin: 5px 0px;
+      }
+    </style>
+
+</head>
+
+<body>
+<div class="pageWrapper">
+<header>
+<h1>The Cyrus Cylinder</h1>
+
+</header>
+<div class="contentWrapper">
+<nav class="clear">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="translation.html">The English Translation</a></li>
+<li><a href="cyrus.html">Cyrus the Great</a></li>
+<li><a href="persia.html">The Persian Empire</a></li>
+<li><a href="resources.html">Additional Resources</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<div id="main">
+</br>
+
+    <p>
+      Please fill out this quick form to send us an email. We are excited 
+      to hear from you!
+    </p>
+</br>
+
+<form id="contact-form" action="contact.php" method="post">
+
+	<label for="name">Name</label>
+	<input class="full-width" type="text" name="name">
+
+	<label for="email">Your email</label>
+	<input class="full-width" type="text" name="email">
+
+	<label for="subject">Subject</label>
+	<input class="full-width" type="text" name="subject"
+          value='Cyrus Cylinder Inquiry'>
+
+	<label for="body">Body</label>
+	<textarea class="full-width" type="text" name="body"></textarea>
+
+	<input type="submit" name = "send" value="Send">
+	
+</form>
+</br>
+</br>
+
+</div>
+
+</div>  <!--end of contentWrapper div-->
+<footer>
+</br>
+<p>Copyright 2013, Danny Lee</p>
+</footer>
+</div><!--pageWrapper ends -->
+</body>
+</html>
